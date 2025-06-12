@@ -46,7 +46,7 @@ const Header = () => {
                     </nav>
                     <div className="px-8">
                         <p className='text-gray-500 text-sm mb-2'>All data is taken from <a className='underline' href='https://www.worldometers.info/demographics/life-expectancy/'>worldometers.info</a></p>
-                        <p className='text-gray-500 text-sm'>Made by love by <a href="https://sajjaddashti.ir/" className="underline">Sajjad Dashti</a></p>
+                        <p className='text-gray-500 text-sm'>Made with love by <a href="https://sajjaddashti.ir/" className="underline">Sajjad Dashti</a></p>
                     </div>
                 </div>
             </div>

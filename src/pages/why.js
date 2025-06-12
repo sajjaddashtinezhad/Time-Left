@@ -1,5 +1,4 @@
 import * as React from "react"
-import Calculator from "../components/calculator"
 import Seo from "../components/seo";
 import Header from "../components/header"
 import { Link } from "gatsby";
