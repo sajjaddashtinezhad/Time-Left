@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from 'react';
-import Logo from '../images/timeleft-with-text.svg';
 
 const lifeExpectancyData = {
   "Hong Kong": { "male": 83.1, "female": 88.39 },
@@ -365,9 +364,8 @@ const Calculator = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 to-black text-gray-100 p-4 font-inter flex flex-col items-center justify-center">
-      <div className="bg-gray-800 p-8 rounded-xl shadow-2xl w-full max-w-md border border-gray-700">
-        <img src={Logo} alt="Time Left Logo" className="mx-auto mb-10 h-12" />
+    <div>
+        
         <div className="space-y-4">
           {/* Gender selection */}
           <div>
@@ -447,7 +445,7 @@ const Calculator = () => {
           <div className="mt-8 pt-6 border-t border-gray-700 text-center">
             <h2 className="text-xl font-semibold text-gray-200 mb-3">Your Predicted Time</h2>
             <p className="text-sm text-gray-400 mb-4">
-              Estimated Date: {predictedDeathDate.toLocaleDateString('en-US', {
+              Estimated Date of Death: {predictedDeathDate.toLocaleDateString('en-US', {
                 year: 'numeric',
                 month: 'long',
                 day: 'numeric'
@@ -482,9 +480,7 @@ const Calculator = () => {
           </div>
         )}
         <div>
-            <p className='text-gray-500 text-sm text-center mt-8'>All data is taken from <a className='underline' href='https://www.worldometers.info/demographics/life-expectancy/'>worldometers.info</a></p>
         </div>
-      </div>
     </div>
   );
 };

@@ -4,3 +4,9 @@
     --font-inter: 'Inter';
     --color-nigra: #0f1214;
   }
+
+/* Chrome, Safari, Edge */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+}
