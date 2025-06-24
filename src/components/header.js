@@ -10,9 +10,9 @@ const Header = () => {
     return (
         <header className="flex items-center justify-between gap-10 bg-gray-800 pb-9">
             {/* Logo */}
-            <div >
+            <Link to="/" >
                 <img src={Logo} alt="Time Left Logo" className="mx-auto h-12" />
-            </div>
+            </Link>
 
             {/* Menu Icon */}
             <button
@@ -25,8 +25,8 @@ const Header = () => {
 
             {/* Slide-in Menu */}
             <div
-                className={`absolute top-0 right-0 h-full w-full bg-gray-800/70 backdrop-blur-xl transform transition-transform duration-300 z-50 ${
-                    menuOpen ? "translate-x-0" : "translate-x-full"
+                className={`absolute top-0 h-full w-full bg-gray-800/70 backdrop-blur-xl duration-300 z-50 ${
+                    menuOpen ? "left-0" : "left-full"
                 }`}
             >
                 <button
